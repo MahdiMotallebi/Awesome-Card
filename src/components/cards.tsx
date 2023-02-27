@@ -83,13 +83,13 @@ const Img = styled.div`
   transform: translateX(-50%) rotateY(180deg);
   z-index: 100;
   @media (min-width: ${({ theme }) => theme.breakpoints.values.sm}) {
-    width: 23rem;
-    height: 23rem;
+    width: 20rem;
+    height: 20rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.values.xl}) {
-    width: 28rem;
-    height: 28rem;
+    width: 26rem;
+    height: 26rem;
   } ;
 `;
 
@@ -135,7 +135,7 @@ const LeftText = styled.p`
   @media (min-width: ${({ theme }) => theme.breakpoints.values.xl}) {
     font-size: 1rem;
     line-height: 1.3rem;
-    width: 20%;
+    width: 200px;
   } ;
 `;
 
@@ -148,7 +148,7 @@ const Button = styled.button`
   border: 1px solid #000;
   border-radius: 1.5rem;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   cursor: pointer;
 
   p {
@@ -164,7 +164,7 @@ const Button = styled.button`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.values.xl}) {
     gap: 1.5rem;
-    width: 30%;
+    width: 300px;
     padding: 0.8rem 1rem;
   }
 
@@ -227,6 +227,7 @@ const SmallCard = styled.div`
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.values.xl}) {
     height: 35rem;
+    flex: 0.7;
   }
 `;
 
@@ -235,10 +236,11 @@ const Title = styled.div`
   position: relative;
   z-index: 100;
   h6 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 300;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     @media (min-width: ${({ theme }) => theme.breakpoints.values.lg}) {
       font-size: 3.5rem;
@@ -248,7 +250,7 @@ const Title = styled.div`
 
 const OrangeImg = styled.div`
   position: relative;
-  width: 10rem;
+  width: 12rem;
   height: 10rem;
 `;
 const Text = styled.p`
@@ -266,11 +268,15 @@ const Text = styled.p`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.values.sm}) {
     width: 50%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5rem;
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.values.md}) {
     width: 65%;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.xl}) {
+    width: 250px;
   }
 `;
 const Cards = () => {
@@ -281,7 +287,7 @@ const Cards = () => {
           <BsFillGridFill />
         </Icon>
         <Img>
-          <Image src="/images/man.png" layout="fill" alt="man" />
+          <Image src="/images/eagle.png" layout="fill" alt="man" />
         </Img>
         <Bottom>
           <LeftText>because your business needs a lot more</LeftText>

@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
           font-size: 62.5%;
           max-width: 1800px;
           overflow-x: hidden;         
-          font-family: ${({ theme }) => theme.typography.fontFamily};
+          font-family: 'Roboto', 'sans-serif';
           
           
       }

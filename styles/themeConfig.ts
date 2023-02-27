@@ -1,6 +1,4 @@
-import React from 'react';
 import { DefaultTheme } from 'styled-components';
-import { useGlobalContext } from '../src/context';
 
 //colors
 export const tokens = (mode: string) => ({

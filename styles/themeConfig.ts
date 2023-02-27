@@ -151,7 +151,7 @@ export const customTheme = (mode: string): DefaultTheme => {
     mode,
     colors,
     typography: {
-      fontFamily: ['nunito', 'sans-serif'].join(',')
+      fontFamily: ['Roboto', 'sans-serif'].join(',')
     },
     breakpoints: {
       values: {

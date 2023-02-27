@@ -14,7 +14,8 @@ export const GlobalStyle = createGlobalStyle`
  
           width: 100%;
           font-size: 62.5%;
-          overflow-x: hidden;
+          max-width: 1800px;
+          overflow-x: hidden;         
           font-family: ${({ theme }) => theme.typography.fontFamily};
           
           
